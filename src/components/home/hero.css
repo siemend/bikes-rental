@@ -1,0 +1,138 @@
+.hero {
+    background-image: url("../../../public/banner1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(500,100,0,.4);
+    background-blend-mode: multiply;
+    height: 130vh;
+    width: 100%;
+}
+
+.hero .container {
+    padding-top: 3%;
+}
+
+.hero h1 {
+    color: #fff;
+}
+
+.hero p {
+    color: #d9d8d8;
+}
+
+form {
+    padding: 15px 20px;
+    background-color: rgb(249 246 246 / 65%);
+    border-radius: 5px;
+    margin: auto;
+    padding: 20px 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form h2 {
+    color: #38B6FF;
+    text-shadow: 0 0 2px black;
+}
+
+form input {
+    padding: 10px;
+    width: 80%;
+    margin-top: 5px;
+    border-radius: 5px;
+    border-color: #38B6FF;
+}
+
+
+form label {
+    font-size: 16px;
+    color: #022c73;
+    border-color: #38B6FF;
+    margin: 5px 0px;
+    text-align: center;
+}
+form .dateTheft {
+    width: 40%;
+    text-align: center;
+}
+
+form select {
+    width: 40%;
+    border-radius: 5px;
+    padding: 10px 0px;
+    border-color: #38B6FF;
+    text-align: center;
+}
+
+form textarea {
+    width: 80%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border-color: #38B6FF;
+}
+
+.formPublic label {
+    width: 100%;
+    align-self: center;
+}
+
+.formPublic {
+    align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+    .hero .container {
+        padding-top: 10%;
+    }
+
+    form {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+        width: 80%;
+    }
+
+    form .box {
+        border-left: none;
+    }
+
+    form input {
+        width: 100%;
+    }
+
+    form h2 {
+        margin-top: 15px;
+    }
+
+    form select {
+        width: 60% ;
+    }
+
+    form .dateTheft {
+        width: 60%;
+    }
+
+    form textarea {
+        width: 100%;
+        height: 80%;
+    }
+}
+
+@media screen and (max-height: 668px) {
+    .hero {
+        height: 135vh;
+    }
+    
+    .hero .container {
+        padding-top: 1%;
+    }
+
+    form textarea {
+        height: 45px;
+        padding: 5px;
+    }
+}

@@ -1,0 +1,69 @@
+.choosePlan {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.choosePlan .content .box {
+    width: 31.5%;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.choosePlan button {
+    margin-bottom: 20px;
+}
+
+.choosePlan .box:nth-child(1) .topbtn button, .choosePlan .box:nth-child(3) .topbtn button {
+    display: none;
+}
+
+.choosePlan h3 {
+    font-size: 22px;
+    
+}
+
+.choosePlan h1 {
+    font-size: 60px;
+   /* background-color: #38B6FF;
+    border-radius: 20%;*/
+}
+
+.choosePlan ul {
+    margin-top: 40px;
+}
+
+.choosePlan ul li {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.choosePlan label {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.choosePlan .btn5 {
+    width: 100%;
+    color: #38B6FF;
+    text-shadow: 0 0 2px black;
+}
+
+.choosePlan .reg_button {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .choosePlan .content {
+        flex-direction: column;
+    }
+
+    .choosePlan .content .box {
+        width: 100%;
+        padding: 30px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+    }
+}
