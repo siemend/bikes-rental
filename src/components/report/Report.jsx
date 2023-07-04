@@ -79,6 +79,7 @@ export const Report = () => {
             onChange={handleNumber}
             value={licenseNumber}
             type="text"
+            placeholder="Enter bike licence number"
             required
           />
           <label>Name and second name* </label>
@@ -86,10 +87,11 @@ export const Report = () => {
             onChange={handleName}
             value={ownerFullName}
             type="text"
+            placeholder="Enter your name and surname"
             required
           />
           <label>Bike color </label>
-          <input onChange={handleColor} value={color} type="text" />
+          <input onChange={handleColor} value={color} type="text" placeholder="Enter bike color"/>
           <label>Date of theft</label>
           <input className='dateTheft' onChange={handleDate} value={date} type="date" />
           <label>Bike color*</label>
@@ -99,7 +101,7 @@ export const Report = () => {
             <option value="sport">sport</option>
           </select>
           <label>Additional information</label>
-          <textarea onChange={handleInfo} value={description} type="text" cols='30' rows='10' />
+          <textarea onChange={handleInfo} value={description} type="text" cols='30' rows='10' placeholder="Write something that you know about a theft" />
           <button>Report</button>
         </form>
       </main>
