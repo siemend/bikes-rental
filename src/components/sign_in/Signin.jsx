@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 
-export const Signin = ({
-  admin,
+
+export const Signin = (
+  {admin,
   password,
   setPassword,
   email,
   setEmail,
   message,
   handleSubmit,
-  loading,
-}) => {
+  loading,} 
+) => {
   return (
     <main>
       {(loading && (
@@ -26,7 +27,8 @@ export const Signin = ({
               <input
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                type="text"
+                type="email"
+                placeholder="Enter your E-mail"
                 required
               />
               <label>Password</label>
@@ -34,6 +36,7 @@ export const Signin = ({
                 value={password}
                 type="password"
                 onChange={(e) => setPassword(e.target.value)}
+                placeholder="Enter your password"
                 required
               />
 

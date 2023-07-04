@@ -1,21 +1,21 @@
-import React from "react"
-import Header from "../common/header/Header"
-import Home from "../home/Home"
-import Footer from "../common/footer/Footer"
-import Using from "../home/using/Using"
-import ChoosePlan from "../home/plan/ChoosePlan"
-import Contact from "../common/contact/Contact"
+import React from "react";
+import Header from "../common/header/Header";
+import Home from "../home/Home";
+import Footer from "../common/footer/Footer";
+import Using from "../home/using/Using";
+import ChoosePlan from "../home/plan/ChoosePlan";
+import Contact from "../common/contact/Contact";
 import { Officers } from "../officers/Officers";
 import { Messages } from "../messages/Messages";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
-import {Signup} from "../sign_up/Signup"
-import {Signin} from "../sign_in/Signin"
-import {Report} from "../report/Report"
+import {Signup} from "../sign_up/Signup";
+import {Signin} from "../sign_in/Signin";
+import {Report} from "../report/Report";
 
 
-export default function Pages() {
+function Pages() {
   const [data, setData] = useState([]);
   const [approved, setApproved] = useState([]);
   const [email, setEmail] = useState("");
@@ -115,3 +115,4 @@ export default function Pages() {
   );
 }
 
+export default Pages
